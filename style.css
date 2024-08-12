@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+body {
+  background: linear-gradient(to right, black, orangered);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+}
+
+#calc {
+  width: 400px;
+  padding: 0.5em;
+  background-color: #ff0000;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+}
+
+#calc h3 {
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #ff0000;
+}
+
+#operations {
+  text-align: right;
+}
+
+#previous-operation {
+  color: #000000;
+  padding: 0.2em;
+  overflow-wrap: break-word;
+  min-height: 1.6em;
+  font-size: 1.5em;
+}
+
+#current-operation {
+  min-height: 1.6em;
+  font-size: 3em;
+  font-weight: 700;
+  padding: 0.2em;
+  overflow-wrap: break-word;
+}
+
+#buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3px;
+}
+
+#buttons-container button {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  height: 4em;
+  font-size: 1.2em;
+  background-color: #b67070;
+  color: white;
+  cursor: pointer;
+}
+
+#buttons-container .number {
+  background-color: #000000;
+  color: rgb(255, 239, 239);
+}
+
+#buttons-container button:hover {
+  background-color: #ff0000;
+  border-color: #000000;
+}
+
+#buttons-container #equal-btn {
+  grid-column: span 2;
+  background-color: #3c464e;
+}
+
+#buttons-container #equal-btn:hover {
+  grid-column: span 2;
+  background-color: #ff0000;
+}
